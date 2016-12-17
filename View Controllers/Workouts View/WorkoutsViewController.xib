@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkoutsViewController">
+            <connections>
+                <outlet property="btnAdvance" destination="RJJ-VH-wbb" id="BXV-an-ds2"/>
+                <outlet property="btnButt" destination="wtR-7x-DAm" id="fVx-ow-Eve"/>
+                <outlet property="btnExpert" destination="QGq-co-fsY" id="uxe-3n-rd7"/>
+                <outlet property="btnGeneral" destination="Efq-dh-Ym5" id="AvC-Ru-1Ri"/>
+                <outlet property="imgAdvancedLock" destination="34U-UP-V04" id="RN6-sY-Ym8"/>
+                <outlet property="imgBg" destination="FSf-42-vCp" id="P8p-03-ZqQ"/>
+                <outlet property="imgButtLock" destination="upK-HL-XhE" id="B0q-i9-Y9i"/>
+                <outlet property="imgExpertsLock" destination="8TQ-Cs-TTk" id="fTq-uN-KYl"/>
+                <outlet property="scrMain" destination="Etm-4A-dx4" id="oqs-gB-Gcs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Bg.png" id="FSf-42-vCp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Etm-4A-dx4">
+                    <rect key="frame" x="0.0" y="64" width="320" height="543"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" tag="71" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Efq-dh-Ym5" userLabel="btn General">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="general_i5.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="generalBtn_click:" destination="-1" eventType="touchUpInside" id="GUd-0z-b30"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="72" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RJJ-VH-wbb" userLabel="btn Advanced">
+                            <rect key="frame" x="0.0" y="127" width="320" height="126"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <state key="normal" image="Advancelocked_i5.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="advancesBtn_click:" destination="-1" eventType="touchUpInside" id="PbW-KU-E8r"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="73" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QGq-co-fsY" userLabel="Btn Experts">
+                            <rect key="frame" x="0.0" y="254" width="320" height="126"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <state key="normal" image="ExpertLocked_i5.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="expertsBtn_click:" destination="-1" eventType="touchUpInside" id="mut-v7-lGV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="74" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wtR-7x-DAm" userLabel="Btn Butt">
+                            <rect key="frame" x="0.0" y="381" width="320" height="126"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <state key="normal" image="ButtLocked_i5.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttBtn_click:" destination="-1" eventType="touchUpInside" id="12P-IX-63Q"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.png" id="34U-UP-V04">
+                            <rect key="frame" x="259" y="170" width="32" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.png" id="8TQ-Cs-TTk">
+                            <rect key="frame" x="259" y="296" width="32" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.png" id="upK-HL-XhE">
+                            <rect key="frame" x="259" y="432" width="32" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Ybu-He-LmI"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Advancelocked_i5.png" width="320" height="126"/>
+        <image name="App_Bg.png" width="640" height="1136"/>
+        <image name="ButtLocked_i5.png" width="320" height="126"/>
+        <image name="ExpertLocked_i5.png" width="320" height="126"/>
+        <image name="general_i5.png" width="320" height="126"/>
+        <image name="lock.png" width="32" height="38"/>
+    </resources>
+</document>

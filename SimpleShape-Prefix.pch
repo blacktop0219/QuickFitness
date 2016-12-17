@@ -1,0 +1,35 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+#define appTitle @"SimpleShape"
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "common.h"
+    #import "AppDelegate.h"
+    #import "DBController.h"
+    #import "navController.h"
+
+    #define appDelegate ((AppDelegate *)[[UIApplication sharedApplication]delegate])
+    #define ProfilePath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Profile"]
+    #define TempPath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/temp"]
+    #define LibraryPathLocal [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+    #define appstoreUrl @"http://geni.us/simpleshape"
+
+
+//-------- https://itunes.apple.com/us/app/simpleshape/id911246649?ls=1&mt=8 -------//
+//#define Height UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad ? 90 :50
+
+#endif
